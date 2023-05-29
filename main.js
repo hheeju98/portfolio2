@@ -1,5 +1,17 @@
-"use strict";
+const textElement = document.getElementById("text");
+const cursorElement = document.getElementById("cursor");
+const text = "안녕하세요! 프론트엔드 개발자 허희주 입니다.";
+let index = 0;
 
+function typeText() {
+  if (index < text.length) {
+    textElement.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeText, 200); // 타이핑 속도를 조절하려면 이 값을 조정하세요
+  }
+}
+
+typeText();
 // Make navbar transparent when it is on the top
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;

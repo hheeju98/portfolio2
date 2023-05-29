@@ -108,8 +108,9 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: #ba55d3;
+  background-color: #686868;
   padding: 8px;
+  opacity: 60%;
 }
 .navbar__menu {
   display: flex;
@@ -146,7 +147,7 @@ p {
 }
 /* Home */
 #home {
-  background-color: #dda0dd;
+  background-color: black;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -163,7 +164,32 @@ p {
 .home__description {
   color: var(--color-white);
 }
+.home__title_box {
+  margin-top: 25px;
+}
+#typing-effect {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  display: inline-block;
+}
 
+#cursor {
+  border-left: 2px solid white;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home__contact {
   color: var(--color-white);
   font-size: var(--font-regular);
@@ -305,7 +331,7 @@ p {
 }
 /* Contact */
 #contact {
-  background-color: #b9a0fe;
+  background-color: black;
 }
 
 .contact__title,
@@ -372,7 +398,8 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #ba55d3;
+    background-color: #686868;
+    opacity: 60%;
   }
 
   #navbar.navbar--dark {
