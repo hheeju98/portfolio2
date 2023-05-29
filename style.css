@@ -160,12 +160,15 @@ p {
   border: 2px solid var(--color-light-white);
 }
 
+.home_section {
+  height: 640px;
+}
 .home__title,
 .home__description {
   color: var(--color-white);
 }
 .home__title_box {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 #typing-effect {
   font-family: Arial, sans-serif;
@@ -198,6 +201,7 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  margin-top: 40px;
 }
 
 .home__contact:hover {
