@@ -83,7 +83,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   cursor: default;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
 }
 
 button {
@@ -93,7 +93,6 @@ button {
   outline: none;
   padding: 0;
 }
-
 /* Typography */
 
 h1 {
